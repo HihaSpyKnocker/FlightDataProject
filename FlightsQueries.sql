@@ -13,15 +13,11 @@ ORDER BY countAirplaneType DESC;
 -- Top 10 airports with most flight connections
 SELECT TOP 10 F.fromAirport, F.toAirport, COUNT(*) AS numConnections
 FROM Flight AS F
-INNER JOIN Airplane AS A
-ON F.airplaneID = A.airplaneID
 GROUP BY F.fromAirport, F.toAirport
 ORDER BY numConnections DESC;
 
 -- Top 10 airlines that offer most routes
-SELECT TOP 10 A.airlineID, COUNT(A.airlineID) AS numRoutes
+SELECT TOP 10 F.airlineID, COUNT(F.airlineID) AS numRoutes
 FROM Flight AS F
-INNER JOIN Airplane AS A
-ON F.airplaneID = A.airplaneID
-GROUP BY A.airlineID
+GROUP BY F.airlineID
 ORDER BY numRoutes DESC;
