@@ -70,7 +70,7 @@ CREATE TABLE Booking (
 
 /*--------------------Import Airline-------------------*/
 BULK INSERT Airline
-FROM 'C:\Users\Student\Desktop\Airline.csv'
+FROM 'airline.csv'
 WITH
 (
 	FIRSTROW = 2,
@@ -80,7 +80,7 @@ WITH
 
 /*-------------------Import Airplane-------------------*/
 BULK INSERT Airplane
-FROM 'C:\Users\Student\Desktop\Airplane.csv'
+FROM 'airplane.csv'
 WITH
 (
 	FIRSTROW = 2,
@@ -90,7 +90,7 @@ WITH
 
 /*-------------------Import Flight-------------------*/
 BULK INSERT Flight
-FROM 'C:\Users\Student\Desktop\Flight.csv'
+FROM 'flight.csv'
 WITH
 (
 	FIRSTROW = 2,
