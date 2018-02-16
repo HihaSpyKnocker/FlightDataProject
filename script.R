@@ -10,7 +10,7 @@ routes$c3 <- NULL
 routes$c4 <- NULL
 routes$stops <- NULL
 
-# generate artificial RegID's (surrogate key)
+# generate artificial airplaneID's (surrogate key)
 routes <- cbind(airplaneID = 0, routes)
 routes$airplaneID <- seq(from = 10000, 77662, by = 1)
 
