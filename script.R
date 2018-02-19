@@ -31,9 +31,6 @@ rm(Airline)
 Airline <- data.frame(airlineID)
 
 # output tables
-write.table(Airline, file = "airline.csv", quote = FALSE, 
-            row.names = FALSE)
-write.table(Airplane, file = "airplane.csv", quote = FALSE, 
-            row.names = FALSE)
-write.table(Flight, file = "flight.csv", quote = FALSE,
-            row.names = TRUE)
+write.csv(Airline, file = "airline.csv", row.names = FALSE)
+write.csv(Airplane, file = "airplane.csv", row.names = FALSE)
+write.csv(Flight, file = "flight.csv", row.names = TRUE)
